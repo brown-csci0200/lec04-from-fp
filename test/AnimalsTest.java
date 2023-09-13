@@ -17,6 +17,12 @@ public class AnimalsTest {
     Zoo myZoo = new Zoo(babyDillo, otherDillo);
     Zoo myZoo2 = new Zoo(babyDillo, new Dillo(50, false));
 
+    Zoo myZoo3 = new Zoo(babyDillo, new Boa("slinky", 30, "lettuce"));
+
+    // not meaningful to create a SizedAnimal object!
+    //????  someAnimal = new SizedAnimal(5);
+
+
     /**
      * Example test method.
      * Test methods must have @Test before the method
@@ -40,6 +46,11 @@ public class AnimalsTest {
         // these objects live ONLY inside the method in which they're declared
         Dillo medDillo = new Dillo(20, false);
         Assert.assertEquals(false, medDillo.canShelter());
+    }
+
+    @Test
+    public void testHealthCheck() {
+        Assert.assertEquals(false, myZoo3.healthCheck());
     }
 
 }

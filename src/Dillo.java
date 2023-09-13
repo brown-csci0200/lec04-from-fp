@@ -2,12 +2,13 @@ package src;
 /**
  * Represents a Dillo
  */
-public class Dillo {
-    public int length;
+// "extends" => include the code from...
+public class Dillo extends SizedAnimal implements IAnimal {
+    //public int length; // Moved to SizedAnimal
     public boolean isDead;
 
     public Dillo(int howLong, boolean isD) {
-        this.length = howLong;
+        super(howLong); // Calls the constructor of the class we're extending (superclass, parent, ...)
         this.isDead = isD;
     }
 
@@ -19,6 +20,6 @@ public class Dillo {
     }
 
     public boolean isNormalSize() {
-        return this.length >= 12 && this.length < 24;
+        return this.length >= 12 && this.length <= 24;
     }
 }
