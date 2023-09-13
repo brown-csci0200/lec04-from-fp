@@ -1,8 +1,11 @@
+package test;
+
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
+import src.*;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class AnimalsTest {
@@ -13,9 +16,6 @@ public class AnimalsTest {
 
     Zoo myZoo = new Zoo(babyDillo, otherDillo);
     Zoo myZoo2 = new Zoo(babyDillo, new Dillo(50, false));
-
-    // A new Zoo containing a Dillo and a Boa
-    Zoo myZoo3 = new Zoo(otherDillo, new Boa("slinky", 20, "lettuce"));
 
     /**
      * Example test method.
