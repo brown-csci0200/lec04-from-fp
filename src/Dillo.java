@@ -1,9 +1,10 @@
+package src;
 /**
  * Represents a Dillo
  */
-public class Dillo implements IAnimal {
-    int length;
-    boolean isDead;
+public class Dillo {
+    public int length;
+    public boolean isDead;
 
     public Dillo(int howLong, boolean isD) {
         this.length = howLong;
@@ -15,5 +16,9 @@ public class Dillo implements IAnimal {
      */
     public boolean canShelter() {
         return (this.length > 60) && (this.isDead);
+    }
+
+    public boolean isNormalSize() {
+        return this.length >= 12 && this.length < 24;
     }
 }

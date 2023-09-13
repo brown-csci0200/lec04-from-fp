@@ -1,7 +1,8 @@
+package src;
 /**
  * Represents a Boa
  */
-public class Boa implements IAnimal {
+public class Boa {
     public String name;
     public int length;
     public String eats;
