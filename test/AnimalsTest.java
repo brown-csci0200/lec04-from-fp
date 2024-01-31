@@ -15,7 +15,10 @@ public class AnimalsTest {
     Dillo otherDillo = new Dillo(100, true);
 
     Zoo myZoo = new Zoo(babyDillo, otherDillo);
-    Zoo myZoo2 = new Zoo(babyDillo, new Dillo(50, false));
+    Zoo myZoo2 = new Zoo(babyDillo, new Boa("Bob", 40, "rats"));
+
+    // When we mark SizedAnimal as "abstract", we can no longer create it directly
+//    SizedAnimal mySizedAnimal = new SizedAnimal(6);
 
     /**
      * Example test method.
@@ -40,6 +43,11 @@ public class AnimalsTest {
         // these objects live ONLY inside the method in which they're declared
         Dillo medDillo = new Dillo(20, false);
         Assert.assertEquals(false, medDillo.canShelter());
+    }
+
+    @Test
+    public void testHealthCheck() {
+        Assert.assertEquals(false, myZoo2.healthCheck());
     }
 
 }

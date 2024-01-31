@@ -2,12 +2,11 @@ package src;
 /**
  * Represents a Dillo
  */
-public class Dillo {
-    public int length;
+public class Dillo extends SizedAnimal {
     public boolean isDead;
 
     public Dillo(int howLong, boolean isD) {
-        this.length = howLong;
+        super(howLong);
         this.isDead = isD;
     }
 
@@ -19,6 +18,6 @@ public class Dillo {
     }
 
     public boolean isNormalSize() {
-        return this.length >= 12 && this.length < 24;
+        return this.isLengthBetween(12, 24);
     }
 }
