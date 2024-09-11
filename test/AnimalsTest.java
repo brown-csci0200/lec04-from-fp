@@ -15,7 +15,7 @@ public class AnimalsTest {
     Dillo otherDillo = new Dillo(100, true);
 
     Zoo myZoo = new Zoo(babyDillo, otherDillo);
-    Zoo myZoo2 = new Zoo(babyDillo, new Dillo(50, false));
+    Zoo myZoo2 = new Zoo(babyDillo, new Boa("slinky", 50, "lettuce"));
 
     /**
      * Example test method.

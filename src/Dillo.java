@@ -2,7 +2,7 @@ package src;
 /**
  * Represents a Dillo
  */
-public class Dillo {
+public class Dillo implements IAnimal {
     public int length;
     public boolean isDead;
 
