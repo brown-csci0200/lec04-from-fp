@@ -12,4 +12,8 @@ public class Boa implements IAnimal {
         this.length = length;
         this.eats = eats;
     }
+
+    public boolean isNormalSize() {
+        return this.length >= 30 && this.length < 60;
+    }
 }
