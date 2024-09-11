@@ -1,7 +1,7 @@
 package src;
 
 public class Zoo {
-    public IAnimal animal1;
+    public IAnimal animal1; // Anything that implements IAnimal
     public IAnimal animal2;
 
     public Zoo(IAnimal ani1, IAnimal ani2) {

@@ -17,6 +17,10 @@ public class AnimalsTest {
     Zoo myZoo = new Zoo(babyDillo, otherDillo);
     Zoo myZoo2 = new Zoo(babyDillo, new Boa("slinky", 50, "lettuce"));
 
+    // Not meaningful to make just a SizedAnimal
+    //  => Solution:  make SizedAnimal an ABSTRACT class (see that file for details)
+    //??? mysteryA = new SizedAnimal(10);
+
     /**
      * Example test method.
      * Test methods must have @Test before the method
