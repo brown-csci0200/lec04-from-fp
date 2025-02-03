@@ -9,5 +9,7 @@ public class Zoo {
         this.animal2 = ani2;
     }
 
-
+    public boolean checkLengths() {
+        return this.animal1.isNormalSize() && this.animal2.isNormalSize();
+    }
 }

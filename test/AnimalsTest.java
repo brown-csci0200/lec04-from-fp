@@ -42,4 +42,11 @@ public class AnimalsTest {
         Assert.assertEquals(false, medDillo.canShelter());
     }
 
+    @Test
+    public void testZoo() {
+        Assert.assertEquals(false, babyDillo.canShelter());
+        Glyptodon g = new Glyptodon(66);
+        Assert.assertEquals(true, g.canShelter());
+    }
+
 }
